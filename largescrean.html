@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        margin: 0;
+      }
+      header nav {
+        display: flex;
+      }
+      header nav li {
+        list-style: none;
+        margin: 10px 10px;
+      }
+      header nav li a {
+        text-decoration: none;
+        color: white;
+      }
+      h2 {
+        color: white;
+        margin-left: 50px;
+      }
+      @media (max-width: 800px) {
+        header {
+          flex-direction: column;
+        }
+      }
+      .page-1 {
+        background-image: url(hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .middle {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: larger;
+        font-weight: bolder;
+      }
+      .middle h2 {
+        margin-bottom: 10px;
+      }
+
+      .middle p {
+        margin-top: 0;
+      }
+
+      button {
+        font-weight: bolder;
+        color: white;
+        background-color: rgb(53, 53, 221);
+        padding: 12px;
+        width: 250px;
+        height: 50px;
+        border-radius: 8px;
+        border: none;
+      }
+
+      .page-2 {
+        padding: 50px;
+        text-align: center;
+      }
+      .images h2 {
+        margin-bottom: 20px;
+      }
+      .images {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        gap: 15px;
+      }
+      .images div {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        gap: 30px;
+        height: 300px;
+      }
+      .small {
+        margin: 50px;
+        width: 35%;
+        height: 100%;
+        object-fit: cover;
+        margin: 30px;
+      }
+      .big {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .page-3 {
+        padding: 50px;
+        background-color: lightgray;
+        text-align: center;
+      }
+
+      .page-3 h2 {
+        margin-bottom: 20px;
+      }
+
+      .feature-list {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      @media (max-width: 800px) {
+        .feature-list {
+          flex-direction: column;
+        }
+      }
+      .newsletter {
+        padding: 50px;
+        text-align: center;
+      }
+
+      .newsletter #email {
+        padding: 10px;
+        width: 300px;
+      }
+
+      .newsletter button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        margin: 10px;
+      }
+
+      footer {
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        text-align: center;
+      }
+      .line {
+        height: 2px;
+        width: 150px;
+        background-color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="page-1">
+      <header>
+        <h2>website logo</h2>
+        <nav>
+          <li><a href="Home">Home</a></li>
+          <li><a href="Products">Products</a></li>
+          <li><a href="About">About</a></li>
+          <li><a href="Contacts">Contacts</a></li>
+        </nav>
+      </header>
+      <div class="middle">
+        <h2 style="font-size: 4rem">Responsive Template Page</h2>
+        <p style="font-size: 2rem">Full Stack Training course</p>
+        <p>
+          <button>DOWNLEAD IT HERE</button>
+        </p>
+      </div>
+    </section>
+    <section class="page-2">
+      <h1>Some of our work</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptas,
+        voluptatem fuga optio omnis beatae laboriosam nemo ex reiciendis sunt
+        ipsum quas tempora, unde modi. Aut fugiat voluptas optio quibusdam!
+      </p>
+      <hr class="line" />
+      <div class="images">
+        <div>
+          <img class="small" src="hero.jpg" alt="pic-1" />
+          <img class="big" src="coast.jpg" alt="pic-2" />
+        </div>
+        <div>
+          <img class="big" src="balloon.jpg" alt="pic-3" />
+          <img class="small" src="island.jpg" alt="pic-4" />
+        </div>
+      </div>
+    </section>
+    <section class="page-3">
+      <h1>Features and Services</h1>
+      <div class="feature-list">
+        <div class="feature">
+          <h3>Photography</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+            dolor, sit amet consectetur adipisicing.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+            dolor sit amet, consectetur adipisicing.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Content Editing</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+            dolor sit amet consectetur adipisicing.
+          </p>
+        </div>
+      </div>
+      <div class="newsletter">
+        <h1>Join Our Newsletter</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe,
+          omnis.
+        </p>
+        <form>
+          <input type="email" id="email" placeholder="Email" />
+          <button type="submit">Subscribe Now</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p>
+        Made by Tutorialzine. Images courtesy to Unsplash. No attribution
+        required.
+      </p>
+    </footer>
+  </body>
+</html>
